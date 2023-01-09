@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname,"../myshop/build")))
 
 app.get("*",(req,res)=>{
-   res.sendFile(path.join(__dirname,"../myshop/build/index.html"));
+   res.sendFile(path.join(__dirname,"myshop/build/index.html"));
 })
 app.use(cors());
 app.get("/",(req,res)=>{
